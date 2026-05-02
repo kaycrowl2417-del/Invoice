@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Invoice</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/logo.png">
+</head>
+<body>
+
+<div class="invoice" id="invoice">
+  <h1>INVOICE</h1>
+
+  <div class="info">
+    <div>
+      <p><strong>From:</strong> CROWLEY DIGITAL CREATIONS</p>
+      <p>Email: crowleydigitalcreations@gmail.com</p>
+    </div>
+    <div>
+      <p><strong>To:</strong> Matthew Davis</p>
+      <p>Date: <input type="date"></p>
+    </div>
+  </div>
+
+  <table id="invoice-table">
+    <tr>
+      <th>Item</th>
+      <th>Qty</th>
+      <th>Price</th>
+      <th>Total</th>
+    </tr>
+
+    <tr>
+      <td><input type="text" value="Salon Website"></td>
+      <td><input type="number" value="1" class="qty"></td>
+      <td><input type="number" value="100" class="price"></td>
+      <td class="row-total">$0</td>
+    </tr>
+  </table>
+
+  <p class="total">Grand Total: $<span id="grand-total">0</span></p>
+
+  <button id="download-btn">Download PDF</button>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>

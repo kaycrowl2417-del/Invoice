@@ -1,0 +1,123 @@
+/* ===== GLOBAL ===== */
+body {
+  font-family: "Inter", 'Times New Roman', Times, serif, sans-serif;
+  background: #cfd0d1;
+  margin: 0;
+  padding: 40px 16px;
+  color: #0c0d0d;
+}
+
+/* ===== INVOICE CONTAINER ===== */
+.invoice {
+  max-width: 800px;
+  margin: auto;
+  background: #ffffff;
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+/* ===== HEADER ===== */
+h1 {
+  text-align: center;
+  font-size: 28px;
+  letter-spacing: 2px;
+  margin-bottom: 32px;
+  color: #0f172a;
+}
+
+/* ===== INFO SECTION ===== */
+.info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+  gap: 16px;
+}
+
+.info p {
+  margin: 4px 0;
+  font-size: 14px;
+  color: #525354;
+}
+
+/* ===== TABLE ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 24px;
+}
+
+th {
+  text-align: left;
+  padding: 12px;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  background: #f1f5f9;
+  color: #334155;
+}
+
+td {
+  padding: 12px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+/* ===== INPUTS ===== */
+input {
+  width: 100%;
+  border: none;
+  background: transparent;
+  font-size: 14px;
+  color: #0f172a;
+}
+
+input:focus {
+  outline: none;
+  background: #f8fafc;
+  border-radius: 4px;
+}
+
+/* ===== TOTALS ===== */
+.row-total {
+  font-weight: 500;
+  color: #0f172a;
+}
+
+.total {
+  text-align: right;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 8px;
+  color: #0f172a;
+}
+
+/* ===== BUTTON ===== */
+button {
+  width: 100%;
+  margin-top: 24px;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #0A0A0A, #4A0F1A, #0A0A0A);
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(79, 70, 229, 0.25);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 780px) {
+  .info {
+    flex-direction: column;
+  }
+
+  .invoice {
+    padding: 20px;
+  }
+}
